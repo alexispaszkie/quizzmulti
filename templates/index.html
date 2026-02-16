@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Multi</title>
+</head>
+<body>
+    <h1>🎯 Quiz Multi</h1>
+
+    <p>Quelle est la capitale de la France ?</p>
+
+    <button onclick="answer('Paris')">Paris</button>
+    <button onclick="answer('Berlin')">Berlin</button>
+
+    <p id="resultat"></p>
+
+    <script>
+        function answer(rep) {
+            const resultat = document.getElementById("resultat");
+            if (rep === "Paris") {
+                resultat.innerText = "✅ Bonne réponse !";
+            } else {
+                resultat.innerText = "❌ Mauvaise réponse.";
+            }
+        }
+    </script>
+</body>
+</html>
